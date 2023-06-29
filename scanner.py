@@ -19,14 +19,14 @@ adapt = input(" Your target DNS: ")
 np.random.randint(100)
 dist = threading.Thread()
 
-filename = input("Your wordlist file/list.txt: ")
+filename = input("Your wordlist file/list.txt & payload.json: ")
 fills = ['HTTP/1.1', 'HTTP/1.2', 'HTTP/1.3', 'HTTP/2.0', 'HTTP/0', 'HTTP/2.1', 'HTTP/2.2']
 fillsource = np.random.choice(+1234567890)
 fieldnames = netrc.NetrcParseError
 fill = open(filename)
 fill.readline()
 fill.close()
-payloads = input('Your Payload here/ payload.json: ')
+payloads = input('Your Payload here/ Ex: GET HTTP/1.1: ')
 fils = [f for f in payloads]
 fields = glob.glob(filename)
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
